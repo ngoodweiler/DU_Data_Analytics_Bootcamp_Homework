@@ -10,6 +10,8 @@ with open(budget_csv,'r') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
 #skip the header in calculations
     header = next(csvreader)
+    #Check headers for remainder of code
+    # print(f'headers {header}')
 
 #Populate the month_count and total_profits lists
     for row in csvreader:

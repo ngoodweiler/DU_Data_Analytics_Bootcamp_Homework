@@ -9,6 +9,8 @@ with open(budget_csv,'r') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
 #Skip the header in calculations
     header = next(csvreader)
+    #check headers for remainder of code
+    # print(f'headers {header}')
 
 #Populate total_votes and candidates list
 #Used the set() function to get the candidates from the data as a check on list from the instructions
