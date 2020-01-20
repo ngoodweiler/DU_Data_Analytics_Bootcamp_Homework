@@ -1,3 +1,5 @@
+# Personal hint, look into the .agg() function
+
 # Matplotlib Homework - The Power of Plots
 
 ## Background
