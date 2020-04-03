@@ -8,7 +8,7 @@ function optionChanged(){
     console.log(subjectID);
     generateData(subjectID);
 };
-
+// function to generate the demographics and graphs
 function generateData(subjectID){
     d3.json(json_path).then(function(data) {
         // Create idOptions for dropdown list
@@ -83,7 +83,7 @@ function generateData(subjectID){
                     .text(`BBType: ${bbtype}`)
                     .append('p')
                     .text(`wFreq: ${wfreq}`);
-
+        // add the bubble plot data with dynamic sizes
         var bubbleTrace = [{
             x: otu_ids,
             y: sample_values,
